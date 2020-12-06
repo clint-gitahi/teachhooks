@@ -5,11 +5,12 @@ import HooksCounterThree from './hooksCounterThree'
 import SideEffect from './sideEffects1'
 import SideEffectsCleanup from './sideEffectsCleanup'
 import DataFetching from './Datafetching'
+import CountReducer from './CounterReducer'
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <CountReducer />
     </div>
   );
 }

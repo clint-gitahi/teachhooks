@@ -6,9 +6,9 @@ const initialState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'increment':
-            return { firstCounter: state.firstCounter + 1 };
+            return { firstCounter: state.firstCounter + action.value };
         case 'decrement':
-            return { firstCounter: state.firstCounter - 1 };
+            return { firstCounter: state.firstCounter - action.value };
         case 'reset':
             return initialState;
         default:

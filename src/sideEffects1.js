@@ -1,4 +1,4 @@
-// this runs after every render
+
 import React, { useState, useEffect } from 'react';
 
 function SideEffects() {
@@ -8,7 +8,7 @@ function SideEffects() {
     useEffect(() => {
         // Update the document title using the browser API
         document.title = `You clicked ${count} times`;
-    });
+    }, [count]);
 
     return (
         <div>

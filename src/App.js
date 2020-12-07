@@ -7,42 +7,57 @@ import './App.css';
 // import DataFetching from './Datafetching'
 // import CountReducer from './CounterReducer'
 // import CountReducerTwo from './CounterTwoReducer'
-import ComponentA from './components/ComponentA'
-import ComponentB from './components/ComponentB'
-import ComponentC from './components/ComponentC'
+// import ComponentA from './components/ComponentA'
+// import ComponentB from './components/ComponentB'
+// import ComponentC from './components/ComponentC'
+import CounterOne from './customHooks/CounterOne'
+import CounterTwo from './customHooks/CounterTwo'
 
-export const CountContext = React.createContext()
+// import DataFetchingReducer from './partTwo/DataFetchingReducer'
 
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1;
-    case 'decrement':
-      return state - 1;
-    case 'reset':
-      return initialState;
-    default:
-      return state;
-  }
-}
+// export const CountContext = React.createContext()
+
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1;
+//     case 'decrement':
+//       return state - 1;
+//     case 'reset':
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// }
+
+// function App() {
+
+//   const [count, dispatch] = useReducer(reducer, initialState)
+//   return (
+//     <CountContext.Provider
+//       value={{ countState: count, countDispatch: dispatch }}
+//     >
+//       <div className="App">
+
+//         Count - {count}
+//         <ComponentA />
+//         <ComponentB />
+//         <ComponentC />
+//       </div>
+//     </CountContext.Provider>
+//   );
+// }
 
 function App() {
-
-  const [count, dispatch] = useReducer(reducer, initialState)
   return (
-    <CountContext.Provider
-      value={{ countState: count, countDispatch: dispatch }}
-    >
-      <div className="App">
-
-        Count - {count}
-        <ComponentA />
-        <ComponentB />
-        <ComponentC />
-      </div>
-    </CountContext.Provider>
-  );
+    <div>
+      <CounterOne />
+      <CounterTwo />
+    </div>
+  )
 }
 
 export default App;
+
+

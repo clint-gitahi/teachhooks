@@ -10,8 +10,9 @@ import './App.css';
 // import ComponentA from './components/ComponentA'
 // import ComponentB from './components/ComponentB'
 // import ComponentC from './components/ComponentC'
-import CounterOne from './customHooks/CounterOne'
-import CounterTwo from './customHooks/CounterTwo'
+// import CounterOne from './customHooks/CounterOne'
+// import CounterTwo from './customHooks/CounterTwo'
+import UserForm from './customHooksTwo/UserForm'
 
 // import DataFetchingReducer from './partTwo/DataFetchingReducer'
 
@@ -52,8 +53,7 @@ import CounterTwo from './customHooks/CounterTwo'
 function App() {
   return (
     <div>
-      <CounterOne />
-      <CounterTwo />
+      <UserForm />
     </div>
   )
 }
